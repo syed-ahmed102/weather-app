@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather App</h1>
+        </header>
+
+        <main>
+            <section class="search-section">
+                <form id="search-form">
+                    <input type="text" id="city-input" placeholder="Enter city name" required>
+                    <button type="submit">Search</button>
+                </form>
+            </section>
+
+            <section class="weather-display">
+                <div class="current-weather">
+                    <h2>Current Weather</h2>
+                    <div class="weather-info">
+                        <div class="location">
+                            <h3 id="city-name">City Name</h3>
+                            <p id="date">Date</p>
+                        </div>
+                        <div class="temperature">
+                            <span id="temperature">--</span>°C
+                        </div>
+                        <div class="weather-condition">
+                            <img id="weather-icon" src="pngwing.com.png" alt="Weather icon">
+                            <p id="weather-description">Weather description</p>
+                        </div>
+                        <div class="weather-details">
+                            <p>Humidity: <span id="humidity">--</span>%</p>
+                            <p>Wind Speed: <span id="wind-speed">--</span> km/h</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forecast">
+                    <h2>5-Day Forecast</h2>
+                    <div class="forecast-container">
+                        <div class="forecast-day">
+                            <h4>Day 1</h4>
+                            <img src="pngwing.com.png" alt="Weather icon" class="forecast-icon">
+                            <p class="forecast-temp">--°C</p>
+                        </div>
+                        <div class="forecast-day">
+                            <h4>Day 2</h4>
+                            <img src="pngwing.com.png" alt="Weather icon" class="forecast-icon">
+                            <p class="forecast-temp">--°C</p>
+                        </div>
+                        <div class="forecast-day">
+                            <h4>Day 3</h4>
+                            <img src="pngwing.com.png" alt="Weather icon" class="forecast-icon">
+                            <p class="forecast-temp">--°C</p>
+                        </div>
+                        <div class="forecast-day">
+                            <h4>Day 4</h4>
+                            <img src="pngwing.com.png" alt="Weather icon" class="forecast-icon">
+                            <p class="forecast-temp">--°C</p>
+                        </div>
+                        <div class="forecast-day">
+                            <h4>Day 5</h4>
+                            <img src="pngwing.com.png" alt="Weather icon" class="forecast-icon">
+                            <p class="forecast-temp">--°C</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Weather App. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
